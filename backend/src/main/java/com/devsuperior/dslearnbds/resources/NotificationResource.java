@@ -20,6 +20,7 @@ public class NotificationResource {
 	@Autowired
 	private NotificationService service;
 	
+	
 	@GetMapping
 	public ResponseEntity<Page<NotificationDTO>> findAll(
 			@RequestParam(value = "unreadOnly", defaultValue = "false") Boolean unreadOnly,
